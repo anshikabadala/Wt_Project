@@ -3,6 +3,7 @@
 <head>
 <title>Registration</title>
 </head>
+<link rel="stylesheet" href="reg.css">
 
 <body>
 
@@ -12,19 +13,49 @@
 <form>
 
 Name:<br>
-<input type="text"><br><br>
+<input type="text" placeholder="Enter your name"><br><br>
 
 Email:<br>
-<input type="email"><br><br>
+<input type="email" placeholder="Enter your email"><br><br>
 
 Mobile:<br>
-<input type="text"><br><br>
+<input type="text" placeholder="Enter your Mobile no"><br><br>
 
 Course:<br>
-<input type="text"><br><br>
+<input type="text" placeholder="Enter the course "><br><br>
+
+Gender:<br>
+<input type="radio" name="Gender">Male
+<input type="radio" name="Gender">Female
+<input type="radio" name="Gender">Other
+<br><br>
+
+
+Department: <br><br>
+<select>
+        <option>Computer Engineering</option>
+        <option>Information Technology</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+</select>
+
+<br><br>
+
+Hobbies: <br>
+<input type="checkbox">Travelling
+<input type="checkbox">Dancing
+<input type="checkbox">Singing
+<input type="checkbox">Sports
+<input type="checkbox">Reading
+<input type="checkbox">Other
+
+<br><br>
+
+Address: <br>
+<textarea rows="5" cols="10"></textarea>
+<br><br>
 
 <input type="submit" value="Register">
-
 </form>
 
 </body>
