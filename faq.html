@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <style>
+        .dark{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .answer{
+            display : none;
+            padding : 10px;
+        }
+    </style>
+    <h1>Welcome to Student Hub UI FAQ</h1>
+    <nav>
+        <button onclick="theme()">Theme</button>
+    </nav>
+
+
+    <h2>Collapsible FAQ</h2>
+    <button onclick="faq()">What is student hub?</button>
+    
+    <div class="answer" id = "ans">
+        <br>
+         Student Hub provides Everything on one platform
+    </div>
+
+    <hr>
+    <br>
+
+     <button onclick="faq1()">Why there is need of student hub?</button>
+    
+    <div class="answer" id = "ans1">
+        <br>
+         Student Hub provides Everything on one platform
+    </div>
+   <hr>
+    <script>
+        function theme(){
+            document.body.classList.toggle("dark");
+        }
+
+        function faq(){
+            var a = document.getElementById("ans");
+
+            if(a.style.display == "block"){
+                a.style.display = "none";
+            }else{
+                a.style.display = "block";
+            }
+
+        }
+
+        function faq1(){
+            var a = document.getElementById("ans1");
+
+            if(a.style.display == "block"){
+                a.style.display = "none";
+            }else{
+                a.style.display = "block";
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
