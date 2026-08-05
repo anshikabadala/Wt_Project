@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Registration</title>
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
 </head>
-<link rel="stylesheet" href="reg.css">
 
 <body>
 
 <h1 align="center">Student Registration</h1>
 <hr>
 
-<form>
+<form onsubmit="return registerForm()">
 
 Name:<br>
 <input type="text" placeholder="Enter your name"><br><br>
@@ -22,7 +22,7 @@ Mobile:<br>
 <input type="text" placeholder="Enter your Mobile no"><br><br>
 
 Course:<br>
-<input type="text" placeholder="Enter the course "><br><br>
+<input type="text" placeholder="Enter the course"><br><br>
 
 Gender:<br>
 <input type="radio" name="Gender">Male
@@ -30,18 +30,17 @@ Gender:<br>
 <input type="radio" name="Gender">Other
 <br><br>
 
-
-Department: <br><br>
+Department:<br><br>
 <select>
-        <option>Computer Engineering</option>
-        <option>Information Technology</option>
-        <option>Mechanical Engineering</option>
-        <option>Civil Engineering</option>
+    <option>Computer Engineering</option>
+    <option>Information Technology</option>
+    <option>Mechanical Engineering</option>
+    <option>Civil Engineering</option>
 </select>
 
 <br><br>
 
-Hobbies: <br>
+Hobbies:<br>
 <input type="checkbox">Travelling
 <input type="checkbox">Dancing
 <input type="checkbox">Singing
@@ -51,12 +50,22 @@ Hobbies: <br>
 
 <br><br>
 
-Address: <br>
+Address:<br>
 <textarea rows="5" cols="10"></textarea>
+
 <br><br>
 
 <input type="submit" value="Register">
+<input type="reset" value="Reset">
+
 </form>
+
+<script>
+function registerForm() {
+    alert("Submitted Successfully");
+    return true; // Allows the form to submit
+}
+</script>
 
 </body>
 </html>
