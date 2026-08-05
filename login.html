@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
-  <link rel="stylesheet" href="login.css">
-
 <body>
 
 <h1 align="center">Student Login</h1>
 <hr>
 
-<form>
+<form name="myForm" onsubmit="return validateForm()">
 
-<label>Username</label><br>
-<input type="text"><br><br>
+    <label>Username</label><br>
+    <input type="text" name="uname" placeholder="Enter Your Username"><br><br>
 
-<label>Password</label><br>
-<input type="password"><br><br>
+    <label>Password</label><br>
+    <input type="password" name="pword" placeholder="Enter Your Password"><br><br>
 
-<input type="submit" value="Login">
+    <input type="submit" value="Login">
+    <input type="button" value="Sign Up"
+           onclick="window.location.href='registration.html'">
+
+</a>
 
 </form>
+
+<script>
+function validateForm() {
+    var u = document.forms["myForm"]["uname"].value;
+    var p = document.forms["myForm"]["pword"].value;
+
+    if (u == "admin" && p == "123") {
+        alert("Valid");
+        return true;   
+    } else {
+        alert("Invalid");
+        return false; 
+    }
+}
+</script>
 
 </body>
 </html>
